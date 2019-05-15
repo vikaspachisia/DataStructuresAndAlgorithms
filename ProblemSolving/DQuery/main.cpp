@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+FILE *inStream, *outStream;
+
 /*
 To use arrays in legacy method of programming contests.
 */
@@ -95,20 +97,20 @@ int getNextTestCase(char* buffer, size_t buffer_length, char* test_id, size_t te
 
 	if (using_test_id)
 	{
-		while ((line = fgets(buffer, buffer_length, stdin)) && buffer[0] != '#');
+		while ((line = fgets(buffer, buffer_length, inStream)) && buffer[0] != '#');
 		if (line) {
 			for (int i = 0; i < test_id_length; i++) { test_id[i] = 0; }
 			for (int i = 0; buffer[i] && i < test_id_length; i++) { test_id[i] = buffer[i]; }
 		}
 
-		while ((line = fgets(buffer, buffer_length, stdin)) && buffer[0] == '#') {
+		while ((line = fgets(buffer, buffer_length, inStream)) && buffer[0] == '#') {
 			for (int i = 0; i < test_id_length; i++) { test_id[i] = 0; }
 			for (int i = 0; buffer[i] && i < test_id_length; i++) { test_id[i] = buffer[i]; }
 		}
 	}
 	else
 	{
-		line = fgets(buffer, buffer_length, stdin);
+		line = fgets(buffer, buffer_length, inStream);
 	}
 
 	if (line) { sscanf_s(buffer, "%d", &no_of_elements); }
@@ -130,7 +132,7 @@ int gettestid(char* testid) {
 void solve_main_problem()
 {
 	char buffer[250001], testid[50] = { 0 }, *line = NULL;
-	using_test_id = false;
+	using_test_id = true;
 	while ((value_count = getNextTestCase(buffer, sizeof(buffer), testid, sizeof(testid)))) {
 
 		//Initialize the variables for correct processing of data.	
@@ -138,7 +140,7 @@ void solve_main_problem()
 		for (int i = 0; i < MAX_ST; i++) { segment_tree[i] = 0; }
 
 		//Read the values from input.
-		if (fgets(buffer, sizeof(buffer), stdin)) {
+		if (fgets(buffer, sizeof(buffer), inStream)) {
 			int counter = 0;
 			for (int i = 0; i < value_count; i++) {
 				sscanf_s(buffer + counter, "%d", &values[i]);
@@ -150,9 +152,9 @@ void solve_main_problem()
 		}
 
 		//read the queries from input
-		if (fgets(buffer, sizeof(buffer), stdin)) { sscanf_s(buffer, "%d", &query_count); }
+		if (fgets(buffer, sizeof(buffer), inStream)) { sscanf_s(buffer, "%d", &query_count); }
 		for (int i = 0; i < query_count; i++) {
-			if (fgets(buffer, sizeof(buffer), stdin)) {
+			if (fgets(buffer, sizeof(buffer), inStream)) {
 				auto argcount = sscanf_s(buffer, "%d %d", &queries[i].from, &queries[i].to);
 				if (argcount != 2)queries[i].to = 0;
 				queries[i].from--; queries[i].to--; queries[i].index = i;
@@ -199,8 +201,6 @@ void solve_main_problem()
 	}
 }
 
-
-FILE *inStream, *outStream;
 void open_unit_test_files() {
 	freopen_s(&inStream, "unit_test_input.txt", "r", stdin);
 	freopen_s(&outStream, "unit_test_output.txt", "w", stdout);
