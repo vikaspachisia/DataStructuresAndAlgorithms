@@ -1,51 +1,30 @@
 //scanf and printf is faster than cin and cout.
-#include <iostream>
+#include <stdio.h>
 using namespace std;
-
-struct operation_data { int L, R, V; };
-operation_data update_queries[100001];
-int queries[10001], bit[10001], N, U, Q;
-
-void update_bit() {
-	auto l = 0, r = 0, v = 0;
-	for (int i = 0; i < U;i++) {
-		l = update_queries[i].L+1, r = update_queries[i].R+2, v= update_queries[i].V;
-		while (l <= N) { bit[l] += v; l += (l & -l); }
-		while (r <= N) { bit[r] -= v; r += (r & -r); }
-	}
-}
-
-void query_bit() {
-	for (int i = 0; i < Q;i++) {
-		int index = queries[i]+1;
-
-		queries[i] = 0;
-		while (index != 0) { queries[i] += bit[index]; index -= (index & -index); }
-	}
-}
-
+#define MAX_N 10002
 void solve_main_problem()
 {
 	char testid[10];
-	int T, ST;
+	int T, ST, VAL, N, U, Q, L, R, D[MAX_N]{};
 
-	cin >> T;
+	scanf("%d",&T);
 	for (int t = 0; t < T; t++)
 	{
-		cin >> testid;		
-		cin >> ST;
+		scanf("%s",&testid);
+		scanf("%d",&ST);
 		for (int st = 0; st < ST; st++) {
-			cin >> N >> U;	
-			for (int i = 0; i <= N; i++)bit[i] = 0;
-			for (int i = 0; i < U; i++) { cin >> update_queries[i].L >> update_queries[i].R >> update_queries[i].V; }
-			cin >> Q;
-			for (int i = 0; i < Q; i++) { cin >> queries[i]; }
+			scanf("%d %d", &N, &U);
+			for (int i = 0; i <= N; i++)D[i] = 0;
+			for (int i = 1; i <= U; i++) { 
+				scanf("%d %d %d", &L, &R, &VAL);
+				D[L+1] += VAL, D[R + 2] -= VAL; 
+			}
+			
+			for (int i = 1; i <= N; i++) { D[i] += D[i - 1]; }
 
-			update_bit();
-			query_bit();
-
-			cout << testid << endl;
-			for (int i = 0; i < Q; i++) { cout << queries[i] << endl; }
+			printf("%d\n", testid);
+			scanf("%d",&Q);			
+			for (int i = 1; i <= Q; i++) { scanf("%d", &VAL); printf("%d", D[VAL+1]); }		
 		}
 	}
 }
