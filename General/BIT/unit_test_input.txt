@@ -1,0 +1,63 @@
+#the first line of each test case contains test_case_id and test_type_code
+
+#(test_type_code = 1) ==> test point update and point query (frequency)
+#(test_type_code = 2) ==> test point update and point query (cumulative frequency)
+#(test_type_code = 3) ==> test point update and range query (frequency)
+#(test_type_code = 4) ==> test point update and range query (cumulative frequency)
+#(test_type_code = 5) ==> test range update and point query (frequency)
+#(test_type_code = 6) ==> test range update and point query (cumulative frequency)
+#(test_type_code = 7) ==> test range update and range query (frequency)
+#(test_type_code = 8) ==> test range update and range query (cumulative frequency)
+
+#1 1
+5
+1 2 3 4 5
+3
+u 2 3
+q 2
+q 3
+#2 2
+5
+1 2 3 4 5
+3
+u 2 3
+q 2
+q 3
+#3 3
+5
+1 2 3 4 5
+2
+u 2 3
+q 2 4
+#4 4
+5
+1 2 3 4 5
+2
+u 2 3
+q 2 4
+#5 5
+5
+1 2 3 4 5
+3
+u 2 4 3
+q 2
+q 3
+#6 6
+5
+1 2 3 4 5
+3
+u 2 4 3
+q 2
+q 3 3
+#7 7
+5
+1 2 3 4 5
+2
+u 2 4 3
+q 2 4
+#8 8
+5
+1 2 3 4 5
+2
+u 2 4 3
+q 2 4
