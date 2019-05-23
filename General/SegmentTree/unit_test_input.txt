@@ -1,4 +1,11 @@
 #the first line of each test case contains test_case_id and test_type_code
+#the second line of each test case contains the number of elements 'N' in the array
+#the third line of each test case contains the elements of the array
+#the fourth line of each test case contains the number of queries 'qn' to be executed
+#the next 'qn' lines contains the queries to be executed in the format
+#'operation type='u' or 'q' and arguments to the operation. For example:
+#  u 2 3
+#  q 2
 
 #(test_type_code = 1) ==> test point update and point query (frequency)
 #(test_type_code = 2) ==> test point update and point query (cumulative frequency)
