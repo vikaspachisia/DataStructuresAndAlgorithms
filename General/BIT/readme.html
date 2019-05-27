@@ -1,0 +1,29 @@
+The classes implemented in this project can
+1. Read input from standard console or from a file (after you uncomment the <b><em>freopen_s</em></b> and <b><em>fclose</em></b> api calls).
+2. Skip corrupted test cases and move to the beginning of next test case. 
+3. Produce output for each test case as long as it gets all the needed input in the order specified below.
+
+The arguments to be supplied depends on the <em><b>test_type_code</em></b> specified in the first line of the test input. 
+These <em><b>test_type_code</em></b> correspond to the examples in the link <to be defined for geeks for geeks and wikepedia>.
+
+<blockquote>
+
+#the first line of each test case contains test_case_id and test_type_code
+#the second line of each test case contains the number of elements 'N' in the array
+#the third line of each test case contains the elements of the array
+#the fourth line of each test case contains the number of queries 'qn' to be executed
+#the next 'qn' lines contains the queries to be executed. The format of these lines depend on test_type_code defined below
+#'operation type='u' or 'q' and arguments to the operation. For example for test_type_code=1, the queries are:
+#  u 2 3
+#  q 2
+
+#(test_type_code = 1) ==&gt; test point update and point query (frequency)
+#(test_type_code = 2) ==&gt; test point update and point query (cumulative frequency)
+#(test_type_code = 3) ==&gt; test point update and range query (frequency)
+#(test_type_code = 4) ==&gt; test point update and range query (cumulative frequency)
+#(test_type_code = 5) ==&gt; test range update and point query (frequency)
+#(test_type_code = 6) ==&gt; test range update and point query (cumulative frequency)
+#(test_type_code = 7) ==&gt; test range update and range query (frequency)
+#(test_type_code = 8) ==&gt; test range update and range query (cumulative frequency)
+
+</blockquote>
