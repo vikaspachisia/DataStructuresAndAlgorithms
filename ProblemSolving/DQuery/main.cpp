@@ -1,3 +1,15 @@
+/**
+* @author Vikas Pachisia (vikas.pachisia@gmail.com)
+*
+* @brief Solution to the SPOJ problem 'DQuery'.
+* This module not only implements the algorithm to solve the SPOJ problem
+* But it also implements the design to read input in various formats
+* (example an input that contains test_id as first line versus the one that does not have it)
+* and to skip inputs that do not provide adequate data in the designated format
+* but still continue to work on the next test
+* (example an input providing string where numbers are expected)
+*
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

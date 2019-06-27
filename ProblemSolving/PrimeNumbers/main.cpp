@@ -1,3 +1,19 @@
+/**
+* @author Vikas Pachisia (vikas.pachisia@gmail.com)
+*
+* @brief Solution to the SPOJ problem 'PRIME1'.
+* This module not only implements the algorithm to solve the SPOJ problem
+* But it also implements the design to read input in various formats
+* (example an input that contains test_id as first line versus the one that does not have it)
+* and to skip inputs that do not provide adequate data in the designated format
+* but still continue to work on the next test
+* (example an input providing string where numbers are expected)
+*
+* More importantly it implements a new variant of segmented seieve designed by @VikasPachisia
+* explained in the geeks for geeks site.
+* 
+* @gfg https://contribute.geeksforgeeks.org/?p=1117824&preview=true
+*/
 #include <stdio.h>
 
 const int MAX_QUERIES=15, MAX_SEGMENT_SIZE = 100000/2 + 1;
