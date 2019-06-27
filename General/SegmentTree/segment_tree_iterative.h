@@ -53,7 +53,7 @@
 //		//printf("trace: %d %d\n", arg1, arg2);
 //		if (code == 'u') { update(arg1 - 1, arg2); }
 //		else if (code == 'q') {
-//			RES[R++] = query(arg1 - 1, arg2 - 1);
+//			RES[R++] = query(arg1 - 1, arg2);
 //			//printf("%d (%c %d %d)\n", RES[R - 1], code, arg1, arg2);
 //		}
 //	}

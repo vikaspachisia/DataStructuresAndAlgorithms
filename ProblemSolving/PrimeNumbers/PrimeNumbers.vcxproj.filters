@@ -5,7 +5,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="unit_test_input.txt" />
-    <Text Include="unit_test_output_expected.txt" />
     <Text Include="unit_test_output.txt" />
+    <Text Include="unit_test_output_expected.txt" />
   </ItemGroup>
 </Project>

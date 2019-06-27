@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}</ProjectGuid>
+    <ProjectGuid>{F97E887A-F424-4D3E-960A-3702C2FEF6E0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DQuery</RootNamespace>
+    <RootNamespace>PrimeNumbers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
