@@ -11,16 +11,9 @@ private:
 
 public:
 	void init(const vector<int>& input) {
-		int inpSize = input.size(), nextIndex = 0;
-
 		m_bit.clear();
-		setSize(inpSize);
-
-		for (int i = 1; i < inpSize; i++) {
-			m_bit[i] = input[i];
-			nextIndex = i + (i & -i);
-			if (nextIndex <= inpSize) { m_bit[nextIndex] += m_bit[i]; }
-		}
+		setSize(input.size());
+		for (int i = 0; i < input.size(); i++) { update(i + 1, input[i]); }
 	}
 
 	void clear() { m_bit.clear(); }
