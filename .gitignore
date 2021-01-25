@@ -329,3 +329,4 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 **/unit_test_output.txt
+/ProblemSolving/Projects/Python/.mypy_cache/3.6

@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp", "cpp\cpp.vcxproj", "{284B3F9D-5939-4EE5-8510-9AADE182A045}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{05463E46-7A8A-4633-9368-786E4B689150}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\TestData\bit_input.txt = ..\..\TestData\bit_input.txt
+		..\..\TestData\bit_output.txt = ..\..\TestData\bit_output.txt
+		..\..\TestData\bit_output_expected.txt = ..\..\TestData\bit_output_expected.txt
+		..\..\TestData\dquery_input.txt = ..\..\TestData\dquery_input.txt
+		..\..\TestData\dquery_output.txt = ..\..\TestData\dquery_output.txt
+		..\..\TestData\dquery_output_expected.txt = ..\..\TestData\dquery_output_expected.txt
+		..\..\TestData\fenwick_tree_input.txt = ..\..\TestData\fenwick_tree_input.txt
+		..\..\TestData\fenwick_tree_output.txt = ..\..\TestData\fenwick_tree_output.txt
+		..\..\TestData\fenwick_tree_output_expected.txt = ..\..\TestData\fenwick_tree_output_expected.txt
+		..\..\TestData\p_binary_input.txt = ..\..\TestData\p_binary_input.txt
+		..\..\TestData\p_binary_output.txt = ..\..\TestData\p_binary_output.txt
+		..\..\TestData\p_binary_output_expected.txt = ..\..\TestData\p_binary_output_expected.txt
+		..\..\TestData\power_products_input.txt = ..\..\TestData\power_products_input.txt
+		..\..\TestData\power_products_output.txt = ..\..\TestData\power_products_output.txt
+		..\..\TestData\power_products_output_expected.txt = ..\..\TestData\power_products_output_expected.txt
+		..\..\TestData\prime_num_range_input.txt = ..\..\TestData\prime_num_range_input.txt
+		..\..\TestData\prime_num_range_output.txt = ..\..\TestData\prime_num_range_output.txt
+		..\..\TestData\prime_num_range_output_expected.txt = ..\..\TestData\prime_num_range_output_expected.txt
+		..\..\TestData\prime_pruning_input.txt = ..\..\TestData\prime_pruning_input.txt
+		..\..\TestData\prime_pruning_output.txt = ..\..\TestData\prime_pruning_output.txt
+		..\..\TestData\prime_pruning_output_expected.txt = ..\..\TestData\prime_pruning_output_expected.txt
+		..\..\TestData\really_magic_input.txt = ..\..\TestData\really_magic_input.txt
+		..\..\TestData\really_magic_output.txt = ..\..\TestData\really_magic_output.txt
+		..\..\TestData\really_magic_output_expected.txt = ..\..\TestData\really_magic_output_expected.txt
+		..\..\TestData\segment_tree_input.txt = ..\..\TestData\segment_tree_input.txt
+		..\..\TestData\segment_tree_output.txt = ..\..\TestData\segment_tree_output.txt
+		..\..\TestData\segment_tree_output_expected.txt = ..\..\TestData\segment_tree_output_expected.txt
+		..\..\TestData\temp_input.txt = ..\..\TestData\temp_input.txt
+		..\..\TestData\temp_output.txt = ..\..\TestData\temp_output.txt
+		..\..\TestData\tv_subscription_input.txt = ..\..\TestData\tv_subscription_input.txt
+		..\..\TestData\tv_subscription_output.txt = ..\..\TestData\tv_subscription_output.txt
+		..\..\TestData\tv_subscription_output_expected.txt = ..\..\TestData\tv_subscription_output_expected.txt
+		..\..\TestData\updateit_input.txt = ..\..\TestData\updateit_input.txt
+		..\..\TestData\updateit_output.txt = ..\..\TestData\updateit_output.txt
+		..\..\TestData\updateit_output_expected.txt = ..\..\TestData\updateit_output_expected.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Programs", "Programs", "{92A782AD-4701-435A-89FA-50CC5B606B58}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Programs\comment_handler.h = ..\..\Programs\comment_handler.h
+		..\..\Programs\program.h = ..\..\Programs\program.h
+		..\..\Programs\program_manager.h = ..\..\Programs\program_manager.h
+		..\..\Programs\testdata.h = ..\..\Programs\testdata.h
+		..\..\Programs\testdata_manager.h = ..\..\Programs\testdata_manager.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{C8E5A2E0-8A9A-4163-807E-5CA9D068312F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Programs\DataStructure\abstract_datastructure.h = ..\..\Programs\DataStructure\abstract_datastructure.h
+		..\..\Programs\DataStructure\bit.h = ..\..\Programs\DataStructure\bit.h
+		..\..\Programs\DataStructure\bit_facade.h = ..\..\Programs\DataStructure\bit_facade.h
+		..\..\Programs\DataStructure\datastructures.h = ..\..\Programs\DataStructure\datastructures.h
+		..\..\Programs\DataStructure\segment_tree.h = ..\..\Programs\DataStructure\segment_tree.h
+		..\..\Programs\DataStructure\segment_tree_iterative.h = ..\..\Programs\DataStructure\segment_tree_iterative.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{AB9D78A0-F5BC-447F-83DB-89FC0355E056}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Programs\Algorithms\abstract_algorithm.h = ..\..\Programs\Algorithms\abstract_algorithm.h
+		..\..\Programs\Algorithms\algorithms.h = ..\..\Programs\Algorithms\algorithms.h
+		..\..\Programs\Algorithms\binary_distance.h = ..\..\Programs\Algorithms\binary_distance.h
+		..\..\Programs\Algorithms\bit.h = ..\..\Programs\Algorithms\bit.h
+		..\..\Programs\Algorithms\p_binary.h = ..\..\Programs\Algorithms\p_binary.h
+		..\..\Programs\Algorithms\power_products.h = ..\..\Programs\Algorithms\power_products.h
+		..\..\Programs\Algorithms\prime_pruning.h = ..\..\Programs\Algorithms\prime_pruning.h
+		..\..\Programs\Algorithms\really_magic.h = ..\..\Programs\Algorithms\really_magic.h
+		..\..\Programs\Algorithms\tv_subscription.h = ..\..\Programs\Algorithms\tv_subscription.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Debug|x64.ActiveCfg = Debug|x64
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Debug|x64.Build.0 = Debug|x64
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Debug|x86.ActiveCfg = Debug|Win32
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Debug|x86.Build.0 = Debug|Win32
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Release|x64.ActiveCfg = Release|x64
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Release|x64.Build.0 = Release|x64
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Release|x86.ActiveCfg = Release|Win32
+		{284B3F9D-5939-4EE5-8510-9AADE182A045}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8E5A2E0-8A9A-4163-807E-5CA9D068312F} = {92A782AD-4701-435A-89FA-50CC5B606B58}
+		{AB9D78A0-F5BC-447F-83DB-89FC0355E056} = {92A782AD-4701-435A-89FA-50CC5B606B58}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8E005FF-BA71-4701-A1AE-6EC623FCEF06}
+	EndGlobalSection
+EndGlobal

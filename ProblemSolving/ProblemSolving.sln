@@ -1,49 +1,127 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DQuery", "DQuery\DQuery.vcxproj", "{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFiles", "DataFiles", "{05B7C3AD-737E-45BC-A897-C7D4614ED5D8}"
+	ProjectSection(SolutionItems) = preProject
+		Datafiles\bit_input.txt = Datafiles\bit_input.txt
+		Datafiles\bit_output.txt = Datafiles\bit_output.txt
+		DataFiles\bit_output_expected.txt = DataFiles\bit_output_expected.txt
+		Datafiles\dquery_input.txt = Datafiles\dquery_input.txt
+		Datafiles\dquery_output.txt = Datafiles\dquery_output.txt
+		DataFiles\dquery_output_expected.txt = DataFiles\dquery_output_expected.txt
+		Datafiles\fenwick_tree_input.txt = Datafiles\fenwick_tree_input.txt
+		Datafiles\fenwick_tree_output.txt = Datafiles\fenwick_tree_output.txt
+		DataFiles\fenwick_tree_output_expected.txt = DataFiles\fenwick_tree_output_expected.txt
+		DataFiles\p_binary_input.txt = DataFiles\p_binary_input.txt
+		DataFiles\p_binary_output.txt = DataFiles\p_binary_output.txt
+		DataFiles\p_binary_output_expected.txt = DataFiles\p_binary_output_expected.txt
+		DataFiles\power_products_input.txt = DataFiles\power_products_input.txt
+		DataFiles\power_products_output.txt = DataFiles\power_products_output.txt
+		DataFiles\power_products_output_expected.txt = DataFiles\power_products_output_expected.txt
+		Datafiles\prime_num_range_input.txt = Datafiles\prime_num_range_input.txt
+		Datafiles\prime_num_range_output.txt = Datafiles\prime_num_range_output.txt
+		DataFiles\prime_num_range_output_expected.txt = DataFiles\prime_num_range_output_expected.txt
+		DataFiles\prime_pruning_input.txt = DataFiles\prime_pruning_input.txt
+		DataFiles\prime_pruning_output.txt = DataFiles\prime_pruning_output.txt
+		DataFiles\prime_pruning_output_expected.txt = DataFiles\prime_pruning_output_expected.txt
+		DataFiles\really_magic_input.txt = DataFiles\really_magic_input.txt
+		DataFiles\really_magic_output.txt = DataFiles\really_magic_output.txt
+		DataFiles\really_magic_output_expected.txt = DataFiles\really_magic_output_expected.txt
+		Datafiles\segment_tree_input.txt = Datafiles\segment_tree_input.txt
+		Datafiles\segment_tree_output.txt = Datafiles\segment_tree_output.txt
+		DataFiles\segment_tree_output_expected.txt = DataFiles\segment_tree_output_expected.txt
+		DataFiles\temp_input.txt = DataFiles\temp_input.txt
+		DataFiles\temp_output.txt = DataFiles\temp_output.txt
+		DataFiles\tv_subscription_input.txt = DataFiles\tv_subscription_input.txt
+		DataFiles\tv_subscription_output.txt = DataFiles\tv_subscription_output.txt
+		DataFiles\tv_subscription_output_expected.txt = DataFiles\tv_subscription_output_expected.txt
+		Datafiles\updateit_input.txt = Datafiles\updateit_input.txt
+		Datafiles\updateit_output.txt = Datafiles\updateit_output.txt
+		DataFiles\updateit_output_expected.txt = DataFiles\updateit_output_expected.txt
+	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FenTree", "FenTree\FenTree.vcxproj", "{23C95903-8B3F-48FB-8274-DA65A134F434}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructure", "DataStructure", "{9B6D86F8-2FF5-4E38-B543-09F4B6D2E791}"
+	ProjectSection(SolutionItems) = preProject
+		ProgramFiles\DataStructure\bit.h = ProgramFiles\DataStructure\bit.h
+		ProgramFiles\DataStructure\bit_facade.h = ProgramFiles\DataStructure\bit_facade.h
+		ProgramFiles\DataStructure\data_structures.h = ProgramFiles\DataStructure\data_structures.h
+		ProgramFiles\DataStructure\segment_tree.h = ProgramFiles\DataStructure\segment_tree.h
+		ProgramFiles\DataStructure\segment_tree_iterative.h = ProgramFiles\DataStructure\segment_tree_iterative.h
+	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.vcxproj", "{F97E887A-F424-4D3E-960A-3702C2FEF6E0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{3C9E2CB0-2123-4EAC-B6CD-CE1D2B8651F9}"
+	ProjectSection(SolutionItems) = preProject
+		algorithm_interface.h = algorithm_interface.h
+		ProgramFiles\Algorithms\algorithms.h = ProgramFiles\Algorithms\algorithms.h
+		ProgramFiles\Algorithms\binary_distance.h = ProgramFiles\Algorithms\binary_distance.h
+		ProgramFiles\Algorithms\bit.h = ProgramFiles\Algorithms\bit.h
+		ProgramFiles\Algorithms\p_binary.h = ProgramFiles\Algorithms\p_binary.h
+		ProgramFiles\Algorithms\power_products.h = ProgramFiles\Algorithms\power_products.h
+		ProgramFiles\Algorithms\prime_pruning.h = ProgramFiles\Algorithms\prime_pruning.h
+		ProgramFiles\Algorithms\really_magic.h = ProgramFiles\Algorithms\really_magic.h
+		ProgramFiles\Algorithms\tv_subscription.h = ProgramFiles\Algorithms\tv_subscription.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{BDA4D400-DCCF-425E-BC1B-65FCE9ADDE2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgramFiles", "ProgramFiles", "{9310468E-C0BA-4C50-98DD-ECDD56372A5E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPP", "Projects\CPP\CPP.vcxproj", "{EEAE593E-008E-4999-BDE3-7666AB57C77B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "Projects\CSharp\CSharp.csproj", "{FBA3746E-EA80-4301-BD72-579E26B38826}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python", "Projects\Python\Python.pyproj", "{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Debug|x64.ActiveCfg = Debug|x64
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Debug|x64.Build.0 = Debug|x64
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Debug|x86.ActiveCfg = Debug|Win32
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Debug|x86.Build.0 = Debug|Win32
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Release|x64.ActiveCfg = Release|x64
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Release|x64.Build.0 = Release|x64
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Release|x86.ActiveCfg = Release|Win32
-		{41D71FA0-2DAF-4186-8A5B-5ABA9DF20D1B}.Release|x86.Build.0 = Release|Win32
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Debug|x64.ActiveCfg = Debug|x64
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Debug|x64.Build.0 = Debug|x64
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Debug|x86.ActiveCfg = Debug|Win32
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Debug|x86.Build.0 = Debug|Win32
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Release|x64.ActiveCfg = Release|x64
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Release|x64.Build.0 = Release|x64
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Release|x86.ActiveCfg = Release|Win32
-		{23C95903-8B3F-48FB-8274-DA65A134F434}.Release|x86.Build.0 = Release|Win32
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Debug|x64.ActiveCfg = Debug|x64
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Debug|x64.Build.0 = Debug|x64
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Debug|x86.ActiveCfg = Debug|Win32
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Debug|x86.Build.0 = Debug|Win32
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Release|x64.ActiveCfg = Release|x64
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Release|x64.Build.0 = Release|x64
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Release|x86.ActiveCfg = Release|Win32
-		{F97E887A-F424-4D3E-960A-3702C2FEF6E0}.Release|x86.Build.0 = Release|Win32
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Debug|x64.ActiveCfg = Debug|x64
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Debug|x64.Build.0 = Debug|x64
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Debug|x86.ActiveCfg = Debug|Win32
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Debug|x86.Build.0 = Debug|Win32
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Release|x64.ActiveCfg = Release|x64
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Release|x64.Build.0 = Release|x64
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Release|x86.ActiveCfg = Release|Win32
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B}.Release|x86.Build.0 = Release|Win32
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Debug|x64.Build.0 = Debug|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Debug|x86.Build.0 = Debug|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Release|x64.ActiveCfg = Release|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Release|x64.Build.0 = Release|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Release|x86.ActiveCfg = Release|Any CPU
+		{FBA3746E-EA80-4301-BD72-579E26B38826}.Release|x86.Build.0 = Release|Any CPU
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}.Release|x64.ActiveCfg = Release|Any CPU
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B6D86F8-2FF5-4E38-B543-09F4B6D2E791} = {9310468E-C0BA-4C50-98DD-ECDD56372A5E}
+		{3C9E2CB0-2123-4EAC-B6CD-CE1D2B8651F9} = {9310468E-C0BA-4C50-98DD-ECDD56372A5E}
+		{EEAE593E-008E-4999-BDE3-7666AB57C77B} = {BDA4D400-DCCF-425E-BC1B-65FCE9ADDE2D}
+		{FBA3746E-EA80-4301-BD72-579E26B38826} = {BDA4D400-DCCF-425E-BC1B-65FCE9ADDE2D}
+		{2AEA27A5-0C31-4E71-BB2C-1F3784EC8D87} = {BDA4D400-DCCF-425E-BC1B-65FCE9ADDE2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C59842FF-992E-43AF-89B6-B1B176BD00F8}

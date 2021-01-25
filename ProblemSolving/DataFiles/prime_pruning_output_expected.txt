@@ -1,0 +1,4 @@
+//The final string formed after erasing the requested number of characters.
+"cdfhlnrtxd"
+"nrtxdflprvbhjptvbfltxzdfj"
+"xvjptvbfltxzdfj"

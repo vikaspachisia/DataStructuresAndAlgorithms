@@ -1,0 +1,9 @@
+//the first line of each test case represents the length of the string
+//the second line of each test case represents the number of characters to delete.
+
+10
+0
+30
+5
+30
+15
