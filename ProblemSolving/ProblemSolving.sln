@@ -5,6 +5,9 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFiles", "DataFiles", "{05B7C3AD-737E-45BC-A897-C7D4614ED5D8}"
 	ProjectSection(SolutionItems) = preProject
+		DataFiles\3sum_input.txt = DataFiles\3sum_input.txt
+		DataFiles\3Sum_output.txt = DataFiles\3Sum_output.txt
+		DataFiles\3sum_output_expected.txt = DataFiles\3sum_output_expected.txt
 		Datafiles\bit_input.txt = Datafiles\bit_input.txt
 		Datafiles\bit_output.txt = Datafiles\bit_output.txt
 		DataFiles\bit_output_expected.txt = DataFiles\bit_output_expected.txt
@@ -53,6 +56,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructure", "DataStruct
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{3C9E2CB0-2123-4EAC-B6CD-CE1D2B8651F9}"
 	ProjectSection(SolutionItems) = preProject
+		ProgramFiles\Algorithms\3Sum.h = ProgramFiles\Algorithms\3Sum.h
 		algorithm_interface.h = algorithm_interface.h
 		ProgramFiles\Algorithms\algorithms.h = ProgramFiles\Algorithms\algorithms.h
 		ProgramFiles\Algorithms\binary_distance.h = ProgramFiles\Algorithms\binary_distance.h
